@@ -261,7 +261,7 @@ a {
 
 .team-foto-menu {
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);  
+    width: max-width: 552px;  
     border-radius: 0px 0px 4px 4px;  
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);  
 }
@@ -276,7 +276,6 @@ a {
     text-transform: capitalize;  
     margin-bottom: 72px;  
 }
-
 .team-foto {   
     display: flex;
     gap: 24px;
