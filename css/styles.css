@@ -642,8 +642,8 @@ a {
     height: 40px;
 }
 
-.port-section {
-    display: flex;
+.port-section {  
+    display: flex; 
     flex-wrap: wrap;
     row-gap: 48px;     
 }
@@ -700,9 +700,136 @@ a {
     transform: translateY(0); 
 }
 
+@media screen and (min-width: 768px) {      
+    .puk {
+        flex-wrap: wrap;
+        column-gap: 72px;
+        gap: 24px;         
+        width: calc((100% - 24px) / 2);    
+    }
+}
+
 @media screen and (min-width: 1158px) {
     .port {
         padding-top: 120px;
-        padding-bottom: 120px;
+        padding-bottom: 120px;        
     }
+    .puk {        
+        width: calc((100% - 48px) / 3);        
+        flex-direction: column;
+        column-gap: 48px;
+        row-gap: 24px;  
+    }  
+}
+
+/*--------------------------footer---------------------*/
+
+.footer {
+    background-color: #2e2f42;
+    padding-top: 96px;
+    padding-bottom: 96px;    
+}
+
+.footer-logos {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5; 
+    margin-bottom: 16px;  
+    text-align: center;
+    display: inline-block;  
+}
+
+.footer-logos-white {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #f4f4fd;     
+}
+
+.footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    margin-bottom: 72px;
+    max-width: 288px;
+    align-items: center;
+}
+
+.footer-media-social {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.footer-media .social-links {
+    gap: 16px;
+    margin-bottom: 72px;
+}
+
+.footer-media .social-links .social-links-item .social-links-link:hover {        
+    background-color: #31d0aa;
+}
+    
+.footer-media .social-links .social-links-item .social-links-link:focus {
+        background-color: #31d0aa;
+}
+
+.footer-flag-text {
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.footer-flag-tost-nice {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px; 
+    color: #ffffff;  
+    margin-bottom: 16px;    
+}
+
+.footer-flag-btn {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    min-width: 165px;
+    height: 40px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px; 
+    margin: auto;
+}
+
+.footer-flag-btn-icon {
+    margin-left: 16px;
+    fill: #fff;
 }
